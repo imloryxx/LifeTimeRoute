@@ -1,55 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaggio in Canada e Stati Uniti</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://images.unsplash.com/photo-1635492346092-729ba774b9e4?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-            background-size: cover;
-        }
-        .section {
-            transition: background-image 1s ease-in-out;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
         }
         .navbar {
             background-color: #4CAF50;
             overflow: hidden;
             border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        /* Aggiungi qui il tuo CSS */
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .navbar a:hover {
+            opacity: 0.7;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        #home {
+            text-align: center;
+            padding: 100px;
+            background-image: url('url_immagine_default');
+            background-size: cover;
+            color: white;
+        }
+        #map {
+            text-align: center;
+            padding: 50px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
     </style>
     <script>
         function changeBackgroundImage(imageUrl) {
-            document.body.style.backgroundImage = 'url(' + imageUrl + ')';
+            document.getElementById('home').style.backgroundImage = 'url(' + imageUrl + ')';
+        }
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
         }
     </script>
 </head>
 <body>
     <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#news">News</a>
-      <div class="dropdown">
-        <button class="dropbtn" onclick="showBookingForm()">Prenota</button>
-        <div class="dropdown-content">
-          <a href="#">Accedi</a>
-          <a href="#">Registrati</a>
-          <a href="#">Aiuto</a>
+        <div>
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('newYork')">New York</a>
+            <a href="#" onclick="showSection('canada')">Canada</a>
+            <a href="#" onclick="showSection('losAngeles')">Los Angeles</a>
         </div>
-      </div> 
+        <div>
+            <button class="button" onclick="showBookingForm()">Prenota</button>
+        </div>
     </div>
-    <div class="section" onmouseover="changeBackgroundImage('https://images.unsplash.com/photo-1546436836-07a91091f160?q=80&w=3548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-        <h1>Benvenuto al nostro viaggio attraverso Canada e Stati Uniti!</h1>
+
+    <div id="home">
+        <h1>Viaggio in Canada e Stati Uniti</h1>
+    </div>
+
+    <div id="newYork" class="section">
         <h2>New York</h2>
         <p>Il nostro viaggio inizia a New York, una città vibrante conosciuta come la "Grande Mela". Qui potrai visitare luoghi iconici come la Statua della Libertà, Times Square e Central Park.</p>
     </div>
-    <div class="section" onmouseover="changeBackgroundImage('https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=3422&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+
+    <div id="canada" class="section">
         <h2>Viaggio attraverso il Canada</h2>
         <p>Da New York, ci dirigiamo verso nord attraversando il bellissimo paesaggio canadese. Visiteremo città affascinanti come Toronto, Ottawa e Montreal, e vedremo meraviglie naturali come le Montagne Rocciose e il Lago Louise.</p>
     </div>
-    <div class="section" onmouseover="changeBackgroundImage('https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+
+    <div id="losAngeles" class="section">
         <h2>Los Angeles</h2>
         <p>Il nostro viaggio si conclude a Los Angeles, dove potrai goderti un po' di tempo libero per esplorare ulteriormente la città o rilassarti prima del viaggio di ritorno a casa.</p>
     </div>
+
+    <div id="map">
+        <h2>Mappa del viaggio</h2>
+        <!-- Inserisci qui l'immagine della mappa -->
+    </div>
+
     <div id="bookingForm" style="display: none;">
         <h2>Prenota il tuo viaggio</h2>
         <form action="/submit-form" method="POST">
@@ -62,5 +132,14 @@
             <input type="submit" value="Prenota">
         </form>
     </div>
+
+    <script>
+        function showBookingForm() {
+            var bookingForm = document.getElementById('bookingForm');
+            bookingForm.style.display = 'block';
+            // Scroll to booking form
+            bookingForm.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
