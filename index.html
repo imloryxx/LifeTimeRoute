@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Viaggio in Canada e Stati Uniti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1635492346092-729ba774b9e4?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+        }
+        .section {
+            transition: background-image 1s ease-in-out;
+        }
+        .navbar {
+            background-color: #4CAF50;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+        /* Aggiungi qui il tuo CSS */
+    </style>
+    <script>
+        function changeBackgroundImage(imageUrl) {
+            document.body.style.backgroundImage = 'url(' + imageUrl + ')';
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="showBookingForm()">Prenota</button>
+        <div class="dropdown-content">
+          <a href="#">Accedi</a>
+          <a href="#">Registrati</a>
+          <a href="#">Aiuto</a>
+        </div>
+      </div> 
+    </div>
+    <div class="section" onmouseover="changeBackgroundImage('https://images.unsplash.com/photo-1546436836-07a91091f160?q=80&w=3548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <h1>Benvenuto al nostro viaggio attraverso Canada e Stati Uniti!</h1>
+        <h2>New York</h2>
+        <p>Il nostro viaggio inizia a New York, una città vibrante conosciuta come la "Grande Mela". Qui potrai visitare luoghi iconici come la Statua della Libertà, Times Square e Central Park.</p>
+    </div>
+    <div class="section" onmouseover="changeBackgroundImage('https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=3422&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <h2>Viaggio attraverso il Canada</h2>
+        <p>Da New York, ci dirigiamo verso nord attraversando il bellissimo paesaggio canadese. Visiteremo città affascinanti come Toronto, Ottawa e Montreal, e vedremo meraviglie naturali come le Montagne Rocciose e il Lago Louise.</p>
+    </div>
+    <div class="section" onmouseover="changeBackgroundImage('https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <h2>Los Angeles</h2>
+        <p>Il nostro viaggio si conclude a Los Angeles, dove potrai goderti un po' di tempo libero per esplorare ulteriormente la città o rilassarti prima del viaggio di ritorno a casa.</p>
+    </div>
+    <div id="bookingForm" style="display: none;">
+        <h2>Prenota il tuo viaggio</h2>
+        <form action="/submit-form" method="POST">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="date">Data di partenza:</label><br>
+            <input type="date" id="date" name="date"><br>
+            <input type="submit" value="Prenota">
+        </form>
+    </div>
+</body>
+</html>
