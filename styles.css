@@ -38,7 +38,7 @@ body {
 
 .home {
     text-align: center;
-    background-image: url('url_immagine_sfondo_home');
+    background-image: url('https://images.unsplash.com/photo-1635492346092-729ba774b9e4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     padding: 100px 0;
 }
