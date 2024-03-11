@@ -1,104 +1,118 @@
+/* Regole generali per il body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Imposta il font per tutto il corpo */
+    margin: 0; /* Rimuove il margine esterno */
+    padding: 0; /* Rimuove il padding */
 }
 
+/* Contenitore principale */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /* Imposta la larghezza massima */
+    margin: 0 auto; /* Centra il contenuto orizzontalmente */
 }
 
+/* Barra di navigazione */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semitrasparente */
+    border-radius: 10px; /* Angoli arrotondati */
+    padding: 10px; /* Spaziatura interna */
+    margin-bottom: 20px; /* Margine inferiore */
 }
 
+/* Links nella barra di navigazione */
 .navbar-links {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Mostra i link in linea */
+    justify-content: center; /* Allinea i link al centro */
 }
 
+/* Pulsanti di navigazione */
 .nav-button {
-    background-color: rgba(76, 175, 80, 0.8);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: rgba(76, 175, 80, 0.8); /* Sfondo verde semi-trasparente */
+    color: white; /* Colore del testo */
+    border: none; /* Rimuove il bordo */
+    padding: 10px 20px; /* Spaziatura interna */
+    margin: 0 5px; /* Margine esterno */
+    border-radius: 20px; /* Angoli arrotondati */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    transition: background-color 0.3s ease; /* Effetto di transizione */
 }
 
+/* Effetto al passaggio del mouse sui pulsanti */
 .nav-button:hover {
-    background-color: rgba(53, 123, 59, 0.8);
+    background-color: rgba(53, 123, 59, 0.8); /* Cambia colore al passaggio del mouse */
 }
 
+/* Stile della homepage */
 .home {
-    text-align: center;
-    background-image: url('https://images.unsplash.com/photo-1635492346092-729ba774b9e4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    padding: 100px 0;
+    text-align: center; /* Allinea il testo al centro */
+    background-image: url('https://images.unsplash.com/photo-1635492346092-729ba774b9e4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Immagine di sfondo */
+    background-size: cover; /* Copertura totale */
+    padding: 100px 0; /* Spaziatura interna */
 }
 
+/* Stile delle sezioni della città */
 .city {
-    display: none;
-    padding: 20px;
-    background-size: cover;
-    border-radius: 10px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: none; /* Nasconde le sezioni della città per impostazione predefinita */
+    padding: 20px; /* Spaziatura interna */
+    background-size: cover; /* Copertura totale */
+    border-radius: 10px; /* Angoli arrotondati */
+    color: white; /* Colore del testo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombreggiatura del testo */
 }
 
+/* Mostra la sezione della città attiva */
 .city.active {
-    display: block;
+    display: block; /* Mostra la sezione della città */
 }
+
+/* Sfondo e stile per New York */
 #newyork {
-    background-image: url('https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Immagine di sfondo per New York */
 }
 
+/* Sfondo e stile per Toronto */
 #toronto {
-    background-image: url('https://images.unsplash.com/photo-1507992781348-310259076fe0?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1507992781348-310259076fe0?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Immagine di sfondo per Toronto */
 }
 
+/* Sfondo e stile per Ottawa */
 #ottawa {
-    background-image: url('https://images.unsplash.com/photo-1613059488547-0fc691db5231?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1613059488547-0fc691db5231?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Immagine di sfondo per Ottawa */
 }
 
+/* Sfondo e stile per Winnipeg */
 #winnipeg {
-    background-image: url('https://images.unsplash.com/photo-1591658522986-9eb791d2a89a?q=80&w=1652&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1591658522986-9eb791d2a89a?q=80&w=1652&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Immagine di sfondo per Winnipeg */
 }
 
+/* Sfondo e stile per Edmonton */
 #edmonton {
-    background-image: url('https://images.unsplash.com/photo-1539152620375-ef3504215b05?q=80&w=1625&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1539152620375-ef3504215b05?q=80&w=1625&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Immagine di sfondo per Edmonton */
 }
 
+/* Sfondo e stile per Vancouver */
 #vancouver {
-    background-image: url('https://images.unsplash.com/photo-1559511260-66a654ae982a?q=80&w=1818&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1559511260-66a654ae982a?q=80&w=1818&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Immagine di sfondo per Vancouver */
 }
 
+/* Sfondo e stile per Seattle */
 #seattle {
-    background-image: url('https://images.unsplash.com/photo-1502175353174-a7a70e73b362?q=80&w=1726&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1502175353174-a7a70e73b362?q=80&w=1726&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Immagine di sfondo per Seattle */
 }
 
+/* Sfondo e stile per Portland */
 #portland {
-    background-image: url('https://images.unsplash.com/photo-1635209896150-ef275dbd52a2?q=80&w=1675&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1635209896150-ef275dbd52a2?q=80&w=1675&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Immagine di sfondo per Portland */
 }
 
+/* Sfondo e stile per San Francisco */
 #sanfrancisco {
-    background-image: url('https://images.unsplash.com/photo-1575778317757-a794a669912a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1575778317757-a794a669912a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Immagine di sfondo per San Francisco */
 }
 
+/* Sfondo e stile per Los Angeles */
 #losangeles {
-    background-image: url('https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Immagine di sfondo per Los Angeles */
 }
-/* Aggiungi le regole per gli sfondi delle città */
-.city {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-}
+
 
