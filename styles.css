@@ -22,18 +22,18 @@ body {
 }
 
 .nav-button {
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.8);
     color: white;
     border: none;
     padding: 10px 20px;
     margin: 0 5px;
     border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transizione colore pulsanti */
+    transition: background-color 0.3s ease;
 }
 
 .nav-button:hover {
-    background-color: #357b3b; /* Cambia colore al passaggio del mouse */
+    background-color: rgba(53, 123, 59, 0.8);
 }
 
 .home {
@@ -46,13 +46,15 @@ body {
 .city {
     display: none;
     padding: 20px;
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .city.active {
     display: block;
 }
-
-/* Aggiungi le regole per gli sfondi delle città */
 #newyork {
     background-image: url('https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
@@ -92,3 +94,11 @@ body {
 #losangeles {
     background-image: url('https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
+/* Aggiungi le regole per gli sfondi delle città */
+.city {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
