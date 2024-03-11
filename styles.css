@@ -8,20 +8,19 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 50px; /* Spazio sopra il contenuto */
 }
 
 .navbar {
-    position: fixed; /* Barra di navigazione fissa in alto */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Sfondo semi-trasparente */
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between; /* Allinea i bottoni ai lati */
-    z-index: 2; /* Imposta lo z-index sopra gli altri elementi */
+    justify-content: space-between;
+    z-index: 2;
 }
 
 .navbar-links {
@@ -60,12 +59,12 @@ body {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 20px;
-    display: none; /* Nascondi tutte le sezioni delle città all'inizio */
+    display: none;
+    position: relative;
 }
 
 .city.active {
-    display: block; /* Mostra solo la sezione della città attiva */
-    position: relative;
+    display: block;
 }
 
 .city.active::before {
@@ -75,7 +74,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Box semi-trasparente sopra l'immagine */
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
 }
 
