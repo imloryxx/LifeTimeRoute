@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transizione colore pulsanti */
+}
+
+.nav-button:hover {
+    background-color: #357b3b; /* Cambia colore al passaggio del mouse */
+}
+
+.home {
+    text-align: center;
+    background-image: url('url_immagine_sfondo_home');
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.city {
+    display: none;
+    padding: 20px;
+}
+
+.city.active {
+    display: block;
+}
+
+/* Aggiungi le regole per gli sfondi delle città */
+#newyork {
+    background-image: url('https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#toronto {
+    background-image: url('https://images.unsplash.com/photo-1507992781348-310259076fe0?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#ottawa {
+    background-image: url('https://images.unsplash.com/photo-1613059488547-0fc691db5231?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#winnipeg {
+    background-image: url('https://images.unsplash.com/photo-1591658522986-9eb791d2a89a?q=80&w=1652&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#edmonton {
+    background-image: url('https://images.unsplash.com/photo-1539152620375-ef3504215b05?q=80&w=1625&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#vancouver {
+    background-image: url('https://images.unsplash.com/photo-1559511260-66a654ae982a?q=80&w=1818&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#seattle {
+    background-image: url('https://images.unsplash.com/photo-1502175353174-a7a70e73b362?q=80&w=1726&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#portland {
+    background-image: url('https://images.unsplash.com/photo-1635209896150-ef275dbd52a2?q=80&w=1675&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#sanfrancisco {
+    background-image: url('https://images.unsplash.com/photo-1575778317757-a794a669912a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#losangeles {
+    background-image: url('https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}

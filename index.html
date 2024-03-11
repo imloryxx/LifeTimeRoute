@@ -4,186 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaggio in Canada e Stati Uniti</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .navbar {
-            background-color: #4CAF50;
-            border-radius: 15px;
-            overflow: hidden;
-        }
-        
-        .navbar-links {
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        
-        .navbar-links a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        
-        .navbar-links a:hover {
-            background-color: #357b3b;
-        }
-        
-        .section {
-            padding: 50px;
-            text-align: center;
-        }
-        
-        .section h1,
-        .section h2,
-        .section p {
-            margin-bottom: 20px;
-        }
-        
-        #map {
-            text-align: center;
-        }
-        
-        #map img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-links">
-            <a href="#home">Home</a>
-            <a href="#newyork">New York</a>
-            <a href="#quebec">Quebec</a>
-            <a href="#ontario">Ontario</a>
-            <a href="#manitoba">Manitoba</a>
-            <a href="#saskatchewan">Saskatchewan</a>
-            <a href="#alberta">Alberta</a>
-            <a href="#britishcolumbia">British Columbia</a>
-            <a href="#washington">Washington</a>
-            <a href="#oregon">Oregon</a>
-            <a href="#sanfrancisco">San Francisco</a>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-links">
+                <button class="nav-button" onclick="showCity('newyork')">New York</button>
+                <button class="nav-button" onclick="showCity('toronto')">Toronto</button>
+                <button class="nav-button" onclick="showCity('ottawa')">Ottawa</button>
+                <button class="nav-button" onclick="showCity('winnipeg')">Winnipeg</button>
+                <button class="nav-button" onclick="showCity('edmonton')">Edmonton</button>
+                <button class="nav-button" onclick="showCity('vancouver')">Vancouver</button>
+                <button class="nav-button" onclick="showCity('seattle')">Seattle</button>
+                <button class="nav-button" onclick="showCity('portland')">Portland</button>
+                <button class="nav-button" onclick="showCity('sanfrancisco')">San Fransisco</button>
+                <button class="nav-button" onclick="showCity('losangeles')">Los Angeles</button>
+            </div>
         </div>
+        
+        <div class="home" id="home">
+            <h1>Viaggio in Canada e Stati Uniti</h1>
+        </div>
+
+        <div class="city" id="newyork">
+            <h2>New York</h2>
+            <p>Testo di New York...</p>
+        </div>
+
+        <div class="city" id="toronto">
+            <h2>Toronto</h2>
+            <p>Testo di Quebec...</p>
+        </div>
+
+        <div class="city" id="ottawa">
+            <h2>Ottawa</h2>
+            <p>Testo di Ontario...</p>
+        </div>
+
+        <div class="city" id="winnipeg">
+            <h2>Winnipeg</h2>
+            <p>Testo di Manitoba...</p>
+        </div>
+
+        <div class="city" id="edmonton">
+            <h2>Edmonton</h2>
+            <p>Testo di Saskatchewan...</p>
+        </div>
+
+        <div class="city" id="vancouver">
+            <h2>Vancouver</h2>
+            <p>Testo di Alberta...</p>
+        </div>
+
+        <div class="city" id="seattle">
+            <h2>Seattle</h2>
+            <p>Testo di British Columbia...</p>
+        </div>
+
+        <div class="city" id="portland">
+            <h2>Portland</h2>
+            <p>Testo di Washington...</p>
+        </div>
+
+        <div class="city" id="sanfrancisco">
+            <h2>San Fransisco</h2>
+            <p>Testo di Oregon...</p>
+        </div>
+
+        <div class="city" id="losangeles">
+            <h2>Los Angeles</h2>
+            <p>Testo di San Francisco...</p>
+        </div>
+
     </div>
 
-    <div id="home" class="section">
-        <h1>Viaggio in Canada e Stati Uniti</h1>
-        <!-- Inserisci qui l'immagine di sfondo per la home -->
-        <img src="placeholder_image.jpg" alt="Immagine di sfondo">
-    </div>
-
-    <div id="newyork" class="section">
-        <h2>New York</h2>
-        <!-- Inserisci qui l'immagine per New York -->
-        <img src="placeholder_image.jpg" alt="Immagine di New York">
-        <p>Partenza da New York: New York è una città vibrante conosciuta per i suoi grattacieli iconici come l’Empire State Building e la Statua della Libertà. Puoi esplorare i quartieri diversi, visitare i musei come il Metropolitan Museum of Art, o fare una passeggiata a Central Park.</p>
-    </div>
-
-    <div id="quebec" class="section">
-        <h2>Quebec</h2>
-        <!-- Inserisci qui l'immagine per Quebec -->
-        <img src="placeholder_image.jpg" alt="Immagine di Quebec">
-        <p>Prima tappa in Canada - Quebec: Quebec è famosa per la sua ricca storia e il suo patrimonio culturale. Puoi visitare la Citadelle de Québec, esplorare il Musée de la Civilisation, o fare una passeggiata nel Quartiere Petit Champlain.</p>
-    </div>
-
-    <div id="ontario" class="section">
-        <h2>Ontario</h2>
-        <!-- Inserisci qui l'immagine per Ontario -->
-        <img src="placeholder_image.jpg" alt="Immagine di Ontario">
-        <p>Seconda tappa in Canada - Ontario: Ontario offre una varietà di attrazioni, tra cui la CN Tower a Toronto, le cascate del Niagara, e i numerosi parchi provinciali.</p>
-    </div>
-
-    <div id="manitoba" class="section">
-        <h2>Manitoba</h2>
-        <!-- Inserisci qui l'immagine per Manitoba -->
-        <img src="placeholder_image.jpg" alt="Immagine di Manitoba">
-        <p>Terza tappa in Canada - Manitoba: Manitoba è conosciuta per la sua bellezza naturale e la sua ricca cultura. Puoi visitare il Canadian Museum for Human Rights a Winnipeg o esplorare i numerosi parchi provinciali.</p>
-    </div>
-
-    <div id="saskatchewan" class="section">
-        <h2>Saskatchewan</h2>
-        <!-- Inserisci qui l'immagine per Saskatchewan -->
-        <img src="placeholder_image.jpg" alt="Immagine di Saskatchewan">
-        <p>Quarta tappa in Canada - Saskatchewan: Saskatchewan offre una varietà di esperienze all’aperto, tra cui escursioni, pesca, e campeggio. Puoi anche visitare il Royal Saskatchewan Museum a Regina per saperne di più sulla storia naturale della provincia.</p>
-    </div>
-
-    <div id="alberta" class="section">
-        <h2>Alberta</h2>
-        <!-- Inserisci qui l'immagine per Alberta -->
-        <img src="placeholder_image.jpg" alt="Immagine di Alberta">
-        <p>Quinta tappa in Canada - Alberta: Alberta è famosa per le sue montagne maestose e i suoi parchi nazionali, tra cui il Parco Nazionale di Banff e Jasper.</p>
-    </div>
-
-    <div id="britishcolumbia" class="section">
-        <h2>British Columbia</h2>
-        <!-- Inserisci qui l'immagine per British Columbia -->
-        <img src="placeholder_image.jpg" alt="Immagine di British Columbia">
-        <p>Sesta tappa in Canada - British Columbia: British Columbia è conosciuta per la sua bellezza naturale, tra cui le montagne, le foreste pluviali, e la costa.</p>
-    </div>
-
-    <div id="washington" class="section">
-        <h2>Washington</h2>
-        <!-- Inserisci qui l'immagine per Washington -->
-        <img src="placeholder_image.jpg" alt="Immagine di Washington">
-        <p>Prima tappa negli Stati Uniti - Washington: Washington offre una varietà di attrazioni, tra cui il Parco Nazionale di Olympic, il Museo di Arte Frye a Seattle, e il Monte Rainier.</p>
-    </div>
-
-    <div id="oregon" class="section">
-        <h2>Oregon</h2>
-        <!-- Inserisci qui l'immagine per Oregon -->
-        <img src="
-
-placeholder_image.jpg" alt="Immagine di Oregon">
-        <p>Seconda tappa negli Stati Uniti - Oregon: Oregon è famosa per la sua bellezza naturale e la sua cultura progressista.</p>
-    </div>
-
-    <div id="sanfrancisco" class="section">
-        <h2>San Francisco, California</h2>
-        <!-- Inserisci qui l'immagine per San Francisco -->
-        <img src="placeholder_image.jpg" alt="Immagine di San Francisco">
-        <p>Arrivo a San Francisco, California: San Francisco è conosciuta per il suo clima mite, le sue colline ripide, e i suoi punti di riferimento iconici come il Golden Gate Bridge e Alcatraz.</p>
-    </div>
-
-    <div id="booking" class="section">
-        <h2>Prenota il tuo viaggio</h2>
-        <form action="submit-form.php" method="POST" onsubmit="return validateForm()">
-            <label for="name">Nome:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="date">Data di partenza:</label><br>
-            <input type="date" id="date" name="date" required><br>
-            <input type="submit" value="Prenota">
-        </form>
-    </div>
-
-    <div id="map" class="section">
-        <!-- Inserisci qui l'immagine della mappa -->
-        <img src="placeholder_image.jpg" alt="Mappa del viaggio">
-    </div>
-
-    <script>
-        function validateForm() {
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var date = document.getElementById('date').value;
-
-            if (name === '' || email === '' || date === '') {
-                alert('Si prega di compilare tutti i campi.');
-                return false;
-            }
-
-            // Potresti aggiungere ulteriori controlli, ad esempio per il formato dell'email
-
-            return true;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
