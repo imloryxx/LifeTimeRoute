@@ -17,8 +17,8 @@
         </div>
     </header>
     
-    <section class="home">
-        <div class="fullscreen-bg" style="background-image: url('background.jpg');">
+    <section class="home" style="background-image: url('https://images.unsplash.com/photo-1635492346092-729ba774b9e4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <div class="fullscreen-bg">
             <div class="overlay"></div>
             <div class="overlay-content">
                 <h1>Benvenuti!</h1>
@@ -28,13 +28,61 @@
 
     <section class="booking-form" id="bookingForm">
         <div class="container">
-            <!-- Form for booking -->
+            <h2>Compila il modulo di prenotazione</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="text" placeholder="Cognome" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Destinazione desiderata" required>
+                <button type="submit">Invia</button>
+            </form>
         </div>
     </section>
 
     <section class="info-popup" id="infoPopup">
         <div class="container">
-            <!-- Info pop-up content -->
+            <h2>Informazioni sulle città</h2>
+            <div class="city-info" id="newyorkInfo">
+                <h3>New York</h3>
+                <p>New York City è una delle città più iconiche del mondo. Conosciuta come la "Grande Mela", questa metropoli è un melting pot di culture, arte, cibo e architettura. Dai grattacieli di Manhattan alle strade di Brooklyn, New York offre un'esperienza unica e indimenticabile.</p>
+            </div>
+            <div class="city-info" id="torontoInfo">
+                <h3>Toronto</h3>
+                <p>Toronto è una città cosmopolita che riflette la diversità del Canada. Situata sulle rive del lago Ontario, Toronto è famosa per la sua architettura eclettica, i suoi quartieri multietnici e la sua vivace scena culturale. Conosciuta anche come la "Città Reale", Toronto offre un mix unico di cultura, natura e modernità.</p>
+            </div>
+            <div class="city-info" id="ottawaInfo">
+                <h3>Ottawa</h3>
+                <p>Ottawa, la capitale del Canada, è una città affascinante e pittoresca. Situata sul fiume Ottawa, questa città è conosciuta per i suoi splendidi edifici governativi, i suoi parchi incantevoli e la sua ricca storia. Dai una passeggiata lungo il Canale Rideau o visita il maestoso Parlamento per scoprire tutto ciò che Ottawa ha da offrire.</p>
+            </div>
+            <div class="city-info" id="winnipegInfo">
+                <h3>Winnipeg</h3>
+                <p>Winnipeg è una città dinamica situata nel cuore del Canada. Conosciuta per la sua cultura vivace, la sua scena artistica e i suoi festival tutto l'anno, Winnipeg è un luogo da non perdere per gli amanti dell'arte e della cultura. Esplora i suoi musei, i suoi quartieri unici e la sua vibrante vita notturna per scoprire il fascino di Winnipeg.</p>
+            </div>
+            <div class="city-info" id="edmontonInfo">
+                <h3>Edmonton</h3>
+                <p>Edmonton, la capitale dell'Alberta, è una città che offre una vasta gamma di esperienze uniche. Con il suo mix di cultura, natura e intrattenimento, Edmonton è una destinazione ideale per tutti i tipi di viaggiatori. Dai un'occhiata al maestoso Elk Island National Park o visita il vivace quartiere di Whyte Avenue per vivere tutto ciò che Edmonton ha da offrire.</p>
+            </div>
+            <div class="city-info" id="vancouverInfo">
+                <h3>Vancouver</h3>
+                <p>Vancouver è una città costiera incantevole situata tra le montagne e il mare. Conosciuta per la sua bellezza naturale, la sua scena culinaria e la sua vivace cultura, Vancouver offre una vasta gamma di attività per tutti i gusti. Esplora i suoi parchi, le sue spiagge e i suoi quartieri cosmopoliti per scoprire perché Vancouver è una delle città più amate del Canada.</p>
+            </div>
+            <div class="city-info" id="seattleInfo">
+                <h3>Seattle</h3>
+                <p>Seattle, nella regione del Pacifico nord-occidentale degli Stati Uniti, è una città con una vibrante scena culturale e una bellezza naturale mozzafiato. Conosciuta per la Space Needle, il Pike Place Market e il suo caffè, Seattle è una destinazione dinamica che offre una vasta gamma di esperienze per i visitatori. Dai un'occhiata al famoso museo dell'aria e dello spazio o prendi un tour delle caffetterie locali per vivere appieno tutto ciò che Seattle ha da offrire.</p>
+            </div>
+            <div class="city-info" id="portlandInfo">
+                <h3>Portland</h3>
+                <p>Portland, situata nell'Oregon nord-occidentale, è una città nota per la sua cultura alternativa, la sua scena culinaria e la sua bellezza naturale mozzafiato. Conosciuta per i suoi parchi urbani, le sue birrerie artigianali e la sua atmosfera vivace, Portland è una destinazione ideale per gli amanti dell'avventura e dell'innovazione. Dai un'occhiata alla sua vivace scena artistica o fai una passeggiata nel pittoresco quartiere di Pearl District per scoprire tutto ciò che Portland ha da offrire.</p>
+            </div>
+            <div class="city-info" id="sanfranciscoInfo">
+                <h3>San Francisco</h3>
+                <p>San Francisco, situata nella baia dell'Oregon, è una città ricca di storia, cultura e bellezza naturale. Conosciuta per il Golden Gate Bridge, Alcatraz e i suoi quartieri unici, San Francisco offre una vasta gamma di esperienze per i visitatori. Esplora i suoi musei, i suoi parchi e la sua vivace scena artistica per scoprire perché San Francisco è una delle città più affascinanti degli Stati Uniti.</p>
+            </div>
+            <div class="city-info" id="losangelesInfo">
+                <h3>Los Angeles</h3>
+                <p>Los Angeles, la "Città degli Angeli", è una delle città più famose e influenti del mondo. Conosciuta per Hollywood, le sue spiagge e la sua cultura pop, Los Angeles offre una vasta gamma di esperienze per i visitatori. Dai un'occhiata alle sue celebrità, ai suoi musei e ai suoi parchi tematici o fai una passeggiata lungo il celebre Walk of Fame per scoprire tutto ciò che Los Angeles ha da offrire.</p>
+            </div>
+            <!-- Aggiungi altre informazioni sulle città -->
         </div>
     </section>
 
