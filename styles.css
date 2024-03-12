@@ -26,7 +26,7 @@ body {
 }
 
 .nav-button {
-    background-color: rgba(76, 175, 80, 0.8);
+    background-color: rgba(98, 98, 98, 0.8);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -80,4 +80,30 @@ body {
 
 .city-info h3 {
     margin-bottom: 10px;
+}
+/* Aggiungi un colore di sfondo di fallback */
+body {
+    background-color: #ffffff;
+}
+
+/* Rimuovi il bordo grigio sul fondo */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Rimuovi il colore di sfondo grigio dal body */
+body {
+    background-color: transparent;
+}
+
+/* Rimuovi il colore di sfondo grigio dalle sezioni */
+.home .fullscreen-bg {
+    background-color: transparent;
+}
+
+.home .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
 }

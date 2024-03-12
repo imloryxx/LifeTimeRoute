@@ -15,6 +15,46 @@ document.getElementById('homeButton').addEventListener('click', function() {
     document.querySelector('.info-popup').style.display = 'none';
     document.querySelector('.home').style.display = 'flex';
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const homeButton = document.getElementById('homeButton');
+    const infoButton = document.getElementById('infoButton');
+    const bookButton = document.getElementById('bookButton');
+    const loginButton = document.getElementById('loginButton');
+    const signupButton = document.getElementById('signupButton');
+    const bookingForm = document.getElementById('bookingForm');
+    const infoPopup = document.getElementById('infoPopup');
+
+    homeButton.addEventListener('click', function() {
+        toggleActiveSection('home');
+    });
+
+    infoButton.addEventListener('click', function() {
+        toggleActiveSection('infoPopup');
+    });
+
+    bookButton.addEventListener('click', function() {
+        toggleActiveSection('bookingForm');
+    });
+
+    loginButton.addEventListener('click', function() {
+        // Implementa la logica per la visualizzazione del modulo di login
+    });
+
+    signupButton.addEventListener('click', function() {
+        // Implementa la logica per la visualizzazione del modulo di registrazione
+    });
+
+    function toggleActiveSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(function(section) {
+            if (section.id === sectionId) {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        });
+    }
+});
 
 // Add event listeners for each city info button
 const cities = document.querySelectorAll('.city-info');
