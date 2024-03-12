@@ -3,81 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viaggio in Canada e Stati Uniti</title>
+    <title>Travel Booking</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="navbar-links">
-                <button class="nav-button" onclick="showCity('newyork')">New York</button>
-                <button class="nav-button" onclick="showCity('toronto')">Toronto</button>
-                <button class="nav-button" onclick="showCity('ottawa')">Ottawa</button>
-                <button class="nav-button" onclick="showCity('winnipeg')">Winnipeg</button>
-                <button class="nav-button" onclick="showCity('edmonton')">Edmonton</button>
-                <button class="nav-button" onclick="showCity('vancouver')">Vancouver</button>
-                <button class="nav-button" onclick="showCity('seattle')">Seattle</button>
-                <button class="nav-button" onclick="showCity('portland')">Portland</button>
-                <button class="nav-button" onclick="showCity('sanfrancisco')">San Fransisco</button>
-                <button class="nav-button" onclick="showCity('losangeles')">Los Angeles</button>
+    <header class="navbar">
+        <div class="container">
+            <button class="nav-button" id="homeButton">Home</button>
+            <button class="nav-button" id="infoButton">Info</button>
+            <button class="nav-button" id="loginButton">Login</button>
+            <button class="nav-button" id="signupButton">Sign Up</button>
+            <button class="nav-button" id="bookButton">Prenota</button>
+        </div>
+    </header>
+    
+    <section class="home">
+        <div class="fullscreen-bg" style="background-image: url('background.jpg');">
+            <div class="overlay"></div>
+            <div class="overlay-content">
+                <h1>Benvenuti!</h1>
             </div>
         </div>
-        
-        <div class="home" id="home">
-            <h1>Viaggio in Canada e Stati Uniti</h1>
-        </div>
+    </section>
 
-        <div class="city" id="newyork">
-            <h2>New York</h2>
-            <p>Testo di New York...</p>
+    <section class="booking-form" id="bookingForm">
+        <div class="container">
+            <!-- Form for booking -->
         </div>
+    </section>
 
-        <div class="city" id="toronto">
-            <h2>Toronto</h2>
-            <p>Testo di Quebec...</p>
+    <section class="info-popup" id="infoPopup">
+        <div class="container">
+            <!-- Info pop-up content -->
         </div>
-
-        <div class="city" id="ottawa">
-            <h2>Ottawa</h2>
-            <p>Testo di Ontario...</p>
-        </div>
-
-        <div class="city" id="winnipeg">
-            <h2>Winnipeg</h2>
-            <p>Testo di Manitoba...</p>
-        </div>
-
-        <div class="city" id="edmonton">
-            <h2>Edmonton</h2>
-            <p>Testo di Saskatchewan...</p>
-        </div>
-
-        <div class="city" id="vancouver">
-            <h2>Vancouver</h2>
-            <p>Testo di Alberta...</p>
-        </div>
-
-        <div class="city" id="seattle">
-            <h2>Seattle</h2>
-            <p>Testo di British Columbia...</p>
-        </div>
-
-        <div class="city" id="portland">
-            <h2>Portland</h2>
-            <p>Testo di Washington...</p>
-        </div>
-
-        <div class="city" id="sanfrancisco">
-            <h2>San Fransisco</h2>
-            <p>Testo di Oregon...</p>
-        </div>
-
-        <div class="city" id="losangeles">
-            <h2>Los Angeles</h2>
-            <p>Testo di San Francisco...</p>
-        </div>
-
-    </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

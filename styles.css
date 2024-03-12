@@ -10,24 +10,12 @@ body {
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    border-radius: 10px;
-    z-index: 2;
-}
-
-.navbar-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
 }
 
 .nav-button {
-    background-color: rgba(76, 175, 80, 0.8);
+    background-color: #555;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -38,20 +26,26 @@ body {
 }
 
 .nav-button:hover {
-    background-color: rgba(53, 123, 59, 0.8);
+    background-color: #777;
 }
 
 .home {
     text-align: center;
-    padding: 100px 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.city {
-    padding: 20px;
+.fullscreen-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
-.city .overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,66 +53,17 @@ body {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.city .overlay-content {
+.overlay-content {
     z-index: 1;
     color: white;
-    text-align: center;
 }
 
-.city h2, .city p {
-    position: relative;
-    z-index: 1;
+.booking-form {
+    display: none;
 }
 
-.fullscreen-bg {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-#newyork {
-    background-image: url('https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-#toronto {
-    background-image: url('https://images.unsplash.com/photo-1507992781348-310259076fe0?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-#ottawa {
-    background-image: url('https://images.unsplash.com/photo-1613059488547-0fc691db5231?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-#winnipeg {
-    background-image: url('https://images.unsplash.com/photo-1591658522986-9eb791d2a89a?q=80&w=1652&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-#edmonton {
-    background-image: url('https://images.unsplash.com/photo-1539152620375-ef3504215b05?q=80&w=1625&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-#vancouver {
-    background-image: url('https://images.unsplash.com/photo-1559511260-66a654ae982a?q=80&w=1818&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-#seattle {
-    background-image: url('https://images.unsplash.com/photo-1502175353174-a7a70e73b362?q=80&w=1726&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-#portland {
-    background-image: url('https://images.unsplash.com/photo-1635209896150-ef275dbd52a2?q=80&w=1675&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-#sanfrancisco {
-    background-image: url('https://images.unsplash.com/photo-1575778317757-a794a669912a?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-
-#losangeles {
-    background-image: url('https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+.info-popup {
+    display: none;
 }
